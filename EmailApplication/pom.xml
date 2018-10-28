@@ -42,15 +42,15 @@
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-plugin</artifactId>
-				<version>3.5.4</version>
+				<artifactId>maven-war-plugin</artifactId>
 				<configuration>
 					<webResources>
 						<resource>
-						<directory>cfg</directory>
-						<targetPath>WEB-INF</targetPath>
+						<directory>src/main/resources/cfg</directory>
+						<targetPath>WEB-INF/cfg</targetPath>
 						</resource>
 					</webResources>
+					<failOnMissingWebXml>false</failOnMissingWebXml>
 				</configuration>
 			</plugin>
 		</plugins>
